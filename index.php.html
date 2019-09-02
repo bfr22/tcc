@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+<head>
+<meta charset='utf-8' />
+<link href='css/fullcalendar.min.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href='css/personalizado.css' rel='stylesheet' />
+<script src='js/moment.min.js'></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<script src='locale/pt-br.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src='js/personalizado.js'></script>
+
+
+
+</head>
+<body>
+
+	<div id='calendar'></div>
+
+	<!-- Janela Modal no clique  -->
+<div class="modal fade" id="visualizar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalhe da Reserva</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"> 
+        <dl class="row">
+        	<dt class="col-sm-3">Nome do Evento</dt>
+			<dd class="col-sm-9" id="NomeEvento"></dd>
+
+			<dt class="col-sm-3">RA do Professor</dt>
+			<dd class="col-sm-9" id="RAProfessorReserva"></dd>
+
+			<dt class="col-sm-3">RGM do Monitor</dt>
+			<dd class="col-sm-9" id="RGMMonitorReserva"></dd>
+
+			<dt class="col-sm-3">Inicio da Reserva</dt>
+			<dd class="col-sm-9" id="InicioReserva"></dd>
+
+			<dt class="col-sm-3">Fim da Reserva</dt>
+			<dd class="col-sm-9" id="FimReserva"></dd>
+		</dl>
+
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
